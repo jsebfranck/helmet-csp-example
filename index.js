@@ -12,7 +12,7 @@ app.set('view cache', false);
 
 // Helmet config
 app.use(helmetCsp({
-  scriptSrc: ['\'self\'']
+  scriptSrc: ['\'self\'', '\'unsafe-inline\'']
 }));
 
 app.get('/', function (req, res) {
