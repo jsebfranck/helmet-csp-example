@@ -12,7 +12,8 @@ app.set('view cache', false);
 
 // Helmet config
 app.use(helmetCsp({
-  scriptSrc: ['\'self\'', '\'unsafe-inline\'']
+  scriptSrc: ['\'self\'', '\'unsafe-inline\''],
+  disableAndroid: true
 }));
 
 app.get('/', function (req, res) {
